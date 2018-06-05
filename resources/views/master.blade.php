@@ -15,16 +15,9 @@
     @yield('content')
 </body>
 
-<script type="text/javascript">
-  var file = document.getElementById("file");
-  file.onchange = function(){
-    if(file.files.length > 0)
-    {
+<script src="{{asset('js/jquery-1.11.0.min.js')}}"></script>
+<script src="{{asset('js/jquery.cookie.js')}}"></script>
 
-      document.getElementById('filename').innerHTML = 					file.files[0].name;
-
-    }
-  };
-</script>
+@yield('js')
 
 </html>

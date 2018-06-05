@@ -16,6 +16,7 @@ Route::get('/', function () {
 });
 
 Route::post('/post', 'C45Controller@processing');
+Route::post('/inputTest', 'C45Controller@test');
 Route::get('/input', function () {
     return view('inputData');
-});
+})->name('input');
